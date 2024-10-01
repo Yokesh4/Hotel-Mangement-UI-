@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Management System</title>
+    <link rel="stylesheet" href="chatgtp.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#reservation">Make a Reservation</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Our Hotel</h1>
+    </header>
+    
+    <main>
+        <section id="rooms" class="room-list">
+            <h2>Available Rooms</h2>
+            <ul>
+                <li>Room 101</li>
+                <li>Room 102</li>
+                <li>Room 103</li>
+            </ul>
+        </section>
+        
+        <section id="reservation" class="reservation">
+            <h2>Make a Reservation</h2>
+            <form id="reservationForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br>
+                
+                <label for="checkin">Check-in Date:</label>
+                <input type="date" id="checkin" name="checkin" required><br>
+                
+                <label for="checkout">Check-out Date:</label>
+                <input type="date" id="checkout" name="checkout" required><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 Hotel Management System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

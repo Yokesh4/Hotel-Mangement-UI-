@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hbilling.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    <div class="content flex_space">
+        
+        <h1 style="color: green;font-style: italic;font-weight: bold;"><span>Hotel<i class='bx bxs-plane-take-off' ></i></span>Deluna<span><i class='bx bxl-tailwind-css'></i></span></h1>
+        <div class="logo">
+            <!-- <img src="#" alt="" value=""> -->
+        </div>
+        <div class="navlinks">
+            <ul id="menulist">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Rooms">Rooms</a></li>
+                <li><a href="#pages">pages</a></li>                                         
+                <li><a href="#News">News</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><i class='bx bx-search'></i></li>
+                <li><button class="primary-btn"><a href="chatgtp.html">Book Now</a></button></li>
+                <li><i class='bx bx-menu'></i></li>
+            </ul>
+            <span class="fa fa-bars" onclick="menulist()"></span>
+        </div>
+    </div>
+    </header>
+
+    <script>
+        var menulist=document.getElementById('menulist');
+        menulist.style.maxHeight="0px";
+
+        function menutoggle(){
+        if( menulist.style.maxHeight=="0px"){
+        menulist.style.maxHeight="100vh";
+        } 
+        else {
+            menulist.style.maxHeight="0px";
+        }
+    }
+    </script>
+
+    <section class="home">
+        <div class="content"> 
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="images/h1.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Welcome To The !..Hotel Deluna Management..</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            <button class="secondary-btn">Contact us</button>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/h2.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Welcome To The !..Hotel Deluna Management..</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="images/h3.jpg" alt="">
+                    <div class="text">
+                        <h1>Spend Your Holiday</h1>
+                        <p>Welcome To The!..Hotel Deluna Management..</p>
+                        <div class="flex">
+                            <button class="primary-btn">Read More</button>
+                            
+                           
+                        </div>
+                    </div>
+                </div>
+            
+              
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    navText:["<i class= 'fa fa-chevron-left'></i>","<i class= 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+    </script>
+
+    <section class="book">
+        <div class="container flex_space">
+          <div class="text">
+            <h1><span>Book</span>Your Rooms</h1>
+          </div>
+          <div class="form">
+            <from class="grid">
+                <input type="date" placeholder="Arrival Date">
+                <input type="date" placeholder="Dparture Date">
+                <input type="number" placeholder="Adults">
+                <input type="Number" placeholder="Children">
+                <input type="submit" value="Check Availablity">
+
+            </from>
+          </div>
+        </div>
+    </section>
+
+    <section class="about top">
+        <div class="container flex">
+            <div class="left">
+                <div class="heading">
+                    <h1>Welcome</h1>
+                    <h2>Hotel Deluna</h2>
+                </div>
+                <p>The hotel's attention to detail extends to its event spaces, providing a sophisticated backdrop for weddings, conferences, and special occasions. Cutting-edge technology seamlessly integrates with timeless elegance, ensuring a seamless and memorable experience for all guests.<br><br>
+                    Every detail, from the tasteful artwork to the plush furnishings, reflects a commitment to elegance and comfort. The rooms and suites are meticulously designed, featuring sumptuous linens, state-of-the-art amenities, and breathtaking views of the surrounding cityscape. Guests are pampered with personalized services, including a dedicated concierge and 24-hour room service.<br><br>
+                    Culinary experiences at the hotel are nothing short of extraordinary, with a range of world-class restaurants offering diverse cuisines prepared by renowned chefs. The spa and wellness facilities provide a sanctuary for relaxation and rejuvenation, boasting an array of treatments and therapies tailored to individual needs. The rooftop pool and lounge area offer a tranquil oasis amidst the urban hustle and bustle,
+                     complete with cabanas and attentive staff catering to every whim.</p>
+                <button class="primary-btn">About Us</button>
+            </div>
+            <div class="right">
+                <img src="images/lobby.jpg" alt="" value="">
+            </div>
+        </div>
+    </section>
+
+    <section class="counter top">
+        <div class="container grid">
+            <div class="box">
+                <h1>2500</h1>
+                <hr>
+                <span>Coustomer</span>
+            </div>
+            <div class="box">
+                <h1>1250</h1>
+                <hr>
+                <span>Happy Coustomer</span>
+            </div>
+            <div class="box">
+                <h1>1500</h1>
+                <hr>
+                <span>Expert Techines</span>
+            </div>
+            <div class="box">
+                <h1>3500</h1>
+                <hr>
+                <span>Destop Reaired</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="rooms">
+        <div class="container top">
+<div class="heading">
+    <h1>Explore</h1>
+    <h2>Our Rooms</h2>
+    <p>Look For Good</p>
+</div>
+<div class="contant mtop">
+    <div class="owl-carousel owl-carousel1 owl-theme">
+<div class="items">
+    <div class="image">
+        <img src="images/Room-1.jpg">
+    </div>
+    <div class="text">
+        <h2>suporior Rooms</h2>
+        <div class="rate flex">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <p>Best Ones</p>
+        <div class="button flex">
+            <button class="primary-btn"><a href="chatgtp.html">Book Now</a></button>
+            <h3>$250 <span> <br>Per Night</span></h3>
+        </div>
+    </div>
+</div>
+<div class="items">
+    <div class="image">
+        <img src="images/Room-2.jpg">
+    </div>
+    <div class="text">
+        <h2>suporior Rooms</h2>
+        <div class="rate flex">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <p>The hotel will exude opulence from the moment you step through its grand entrance...</p>
+        <div class="button flex">
+            <button class="primary-btn">Book Now</button>
+            <h3>$650 <span> <br>Per Night</span></h3>
+        </div>
+    </div>
+</div>
+<div class="items">
+    <div class="image">
+        <img src="images/Room-3.jpg">
+    </div>
+    <div class="text">
+        <h2>suporior Rooms</h2>
+        <div class="rate flex">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <p>It's Great to sepnd vacation on Deluna Hotel..! </p>
+        <div class="button flex">
+            <button class="primary-btn">Book Now</button>
+            <h3>$350 <span> <br>Per Night</span></h3>
+        </div>
+    </div>
+</div>
+<div class="items">
+    <div class="image">
+        <img src="images/Room-4.jpg">
+    </div>
+    <div class="text">
+        <h2>suporior Rooms</h2>
+        <div class="rate flex">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <p>Best Ones</p>
+        <div class="button flex">
+            <button class="primary-btn">Book Now</button>
+            <h3>$250 <span> <br>Per Night</span></h3>
+        </div>
+    </div>
+</div>
+<div class="items">
+    <div class="image">
+        <img src="images/Room-5.jpg">
+    </div>
+    <div class="text">
+        <h2>superior Rooms</h2>
+        <div class="rate flex">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <p>Best Ones</p>
+        <div class="button flex">
+            <button class="primary-btn">Book Now</button>
+            <h3>$450 <span> <br>Per Night</span></h3>
+        </div>
+    </div>
+</div>
+<div class="items">
+    <div class="image">
+        <img src="images/Room-6.jpg">
+    </div>
+    <div class="text">
+        <h2>superior Rooms</h2>
+        <div class="rate flex">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <p>Best One...!</p>
+        <div class="button flex">
+            <button class="primary-btn">Book Now</button>
+            <h3>$550 <span> <br>Per Night</span></h3>
+        </div>
+    </div>
+</div>
+<div class="items">
+    <div class="image">
+        <img src="images/Room-7.jpg">
+    </div>
+    <div class="text">
+        <h2>superior Rooms</h2>
+        <div class="rate flex">
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+            <i class='bx bxs-star'></i>
+        </div>
+        <p>Comfort and Stasify....Good and Great</p>
+        <div class="button flex">
+            <button class="primary-btn">Book Now</button>
+            <h3>$750 <span> <br>Per Night</span></h3>
+        </div>
+    </div>
+</div>
+    </div>
+
+</div>
+        </div>
+    </section>
+    
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:40,
+    nav:true,
+    dots:false,
+    navText:["<i class= 'fa fa-chevron-left'></i>","<i class= 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:2,
+            margin:10,
+        },
+        1000:{
+            items:3
+        }
+    }
+})
+    </script>
+
+    <section class="gallery">
+        <div class="container top">
+            <div class="heading">
+                <h1>PHOTOS</h1>
+                <h2>Our Gallery</h2>
+                <P>More To Explore</P>
+            </div>
+        </div>
+            <div class="content mtop">
+                <div class="owl-carousel owl-carousel1 owl-theme">
+                    <div class="items">                                                
+                        <div class="img">
+                            <img src="images/gal-1.jpg" alt="" value="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Titile Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">                                                
+                        <div class="img">
+                            <img src="images/gal-2.jpg" alt="" value="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Titile Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">                                                
+                        <div class="img">
+                            <img src="images/gal-3.jpg" alt="" value="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Titile Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">                                                
+                        <div class="img">
+                            <img src="images/gal-4.jpg" alt="" value="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Titile Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">                                                
+                        <div class="img">
+                            <img src="images/gal-5.jpg" alt="" value="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Titile Here.</h3>
+                        </div>
+                    </div>
+                    <div class="items">                                                
+                        <div class="img">
+                            <img src="images/gal-6.jpg" alt="" value="">
+                        </div>
+                        <div class="overlay">
+                            <span class="fa fa-plus"></span>
+                            <h3>Photo Titile Here.</h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <script>
+        $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    autoplay:true,
+    autoplayTimeout:1000,
+    autoplayHoverPause:true,
+    navText:["<i class= 'fa fa-chevron-left'></i>","<i class= 'fa fa-chevron-right'></i>"],
+    responsive:{
+        0:{
+            items:1
+        },
+        768:{
+            items:4,
+           
+        },
+        1000:{
+            items:6
+        }
+    }
+})
+    </script>
+<section class="services top">
+    <div class="container">
+        <div class="heading">
+            <h1>SERVICES</h1>
+            <h2>Our services</h2>
+            <P>More To Explore</P>
+        </div>
+        <div class="container flex_space">
+            <div class="left grid2">
+                <div class="box">
+                    <div class="text">
+                        <i class='bx bxs-drink'></i>
+                        <h3>Delicious food</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class='bx bx-run'></i>
+                        <h3>Fitness</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class='bx bx-fork'></i>
+                        <h3>Inhouse Restaurent</h3>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="text">
+                        <i class='bx bxs-spa'></i>
+                        <h3>Beauty Spa</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <img src="images/h2.jpeg" alt="" value="">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="customer top">
+    <div class="container">
+        <div class="owl-carousel owl-carousel2 owl-theme">
+            <div class="item">
+                <i class='bx bxs-quote-right'></i>
+                <p>The hotel's attention to detail extends to its event spaces, providing a sophisticated backdrop for weddings, 
+                    conferences, and special occasions. Cutting-edge technology seamlessly integrates with timeless elegance, 
+                    ensuring a seamless and memorable experience for all guests. 
+
+                </p>
+                <h3>Julia Robertson</h3>
+                <label>Julia Robertson</label>
+
+            </div>
+            <div class="item">
+                <i class='bx bxs-quote-right'></i>
+                <p>
+                    Every detail, from the tasteful artwork to the plush furnishings, reflects a commitment to elegance and comfort. The rooms and suites are meticulously designed, featuring sumptuous linens, state-of-the-art amenities, and breathtaking views of the surrounding cityscape.
+                     Guests are pampered with personalized services, including a dedicated concierge and 24-hour room service.</p>
+                <h3>Julia Robertson</h3>
+                <label>Julia Robertson</label>
+
+            </div>
+            <div class="item">
+                <i class='bx bxs-quote-right'></i>
+                <p>
+                    Culinary experiences at the hotel are nothing short of extraordinary, with a range of world-class restaurants offering diverse cuisines prepared by renowned chefs. The spa and wellness facilities provide a sanctuary for relaxation and rejuvenation, boasting an array of treatments and therapies tailored to individual needs. The rooftop pool and lounge area offer a tranquil oasis amidst the urban hustle and bustle,
+                     complete with cabanas and attentive staff catering to every whim.</p>
+                <h3>Julia Robertson</h3>
+                <label>Julia Robertson</label>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<script>
+    $('.owl-carousel').owlCarousel({
+loop:true,
+margin:0,
+nav:false,
+dots:true,
+responsive:{
+    0:{
+        items:1
+    },
+    768:{
+        items:1,
+       
+    },
+    1000:{
+        items:1
+    }
+}
+})
+</script>
+
+<section class="news top rooms">
+    <div class="container">
+        <div class="heading">
+            <h1>News</h1>
+            <h2>Our News</h2>
+            <P>More To Explore</P>
+        </div>
+        <div class="content flex">
+            <div class="left grid2">
+                <div class="items">
+                    <div class="img">
+                        <img src="images/res.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Finibus bonorum malorm.</h2>
+                        <div class="admin flex">
+                            <i class='bx bxs-user-pin'></i>
+                            <label>Admin</label>
+                            <i class='bx bxs-heart'></i>
+                            <label>500</label>
+                            <i class='bx bxs-chat'></i>
+                            <label>Comments</label>
+                        </div>
+                        <p>Culinary experiences at the hotel are nothing short of extraordinary, 
+                        with a range of world-class restaurants offering diverse cuisines prepared by renowned chefs. The spa and wellness facilities provide a sanctuary for relaxation and rejuvenation, boasting an array of treatments and therapies tailored to individual needs. The rooftop pool and lounge area offer a tranquil oasis amidst the urban hustle and bustle, 
+                            complete with cabanas and attentive staff catering to every whim.</p>
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="image">
+                        <img src="images/res2.jpg" alt="">
+                    </div>
+                    <div class="text">
+                        <h2>Finibus bonorum malorm.</h2>
+                        <div class="admin flex">
+                            <i class='bx bxs-user-pin'></i>
+                            <label>Admin</label>
+                            <i class='bx bxs-heart'></i>
+                            <label>500</label>
+                            <i class='bx bxs-chat'></i>
+                            <label>Comments</label>
+                        </div>
+                        <p>Every detail, from the tasteful artwork to the plush furnishings,
+                             reflects a commitment to elegance and comfort. The rooms and suites are meticulously designed</p>
+                    </div>
+                </div>
+                <video controls poster="images/thumbnail.png">
+                    <source src="hotel.mp4">
+                </video>
+            
+   
+                <div class="right">
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/com-1.jpg" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>@ Aman#11</h2>
+                            <p>Good for goods...!<br><br>
+                                Culinary experiences at the hotel are nothing short of extraordinary,
+                                 with a range of world-class restaurants offering diverse cuisines prepared by renowned chefs.
+                                  </p>
+                        </div>
+                        
+                    </div>
+                    <div class="box flex">
+                        <div class="img">
+                            <img src="images/com-2.jpg" alt="">
+                        </div>
+                        <div class="stext">
+                            <h2>@ Sheela#1</h2>
+                            <p>Nice to relax..!<br><br>
+                                Every detail, from the tasteful artwork to the plush furnishings, 
+                                reflects a commitment to elegance and comfort.</p>
+                        </div>
+                        
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="newsletter mtop">
+    <div class="container flex_space">
+        <h1>Subscribe To Our NewsLetters</h1>
+        <input type="text" placeholder="your email">
+        <input type="text" value="Subscribe">
+    </div>
+</section>
+
+<footer>
+    <div class="container grid">
+<div class="box">
+   
+    <p>Explore</p>
+
+    <div class="icon">
+        <i class='bx bxl-facebook-circle' ></i>
+        <i class='bx bxl-instagram-alt' ></i>
+        <i class='bx bxl-instagram-alt' ></i>
+        <i class='bx bxl-instagram-alt' ></i>
+    </div>
+</div>
+<div class="box">
+    <h2>Links</h2>
+    <ul>
+        <li>Company History</li>
+        <li>About us</li>
+        <li>Contact Us</li>
+        <li>Privacy Policy</li>
+    </ul>
+</div>
+<div class="box">
+    <h2>Contact Us</h2>
+    <p>For more</p>
+    <i class='bx bxl-instagram-alt' ></i>
+    <label>1201 park street,Avenue,Dhaka</label>
+    <i class='bx bxl-instagram-alt' ></i>
+    <label>[89] 657 898 891</label>
+    <i class='bx bx-mail-send' ></i>
+    <label>Information@in.com</label>
+</div>
+    </div>
+</footer>
+<div class="legal">
+    <p>Footer The End</p>
+</div>
+</body>
+</html>
